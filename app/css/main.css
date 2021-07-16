@@ -1,0 +1,38 @@
+body {
+  background: #000; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.form {
+  margin-top: 20px; }
+
+.result {
+  background-color: #fff;
+  overflow-wrap: break-word; }
+
+.input-text {
+  width: 30%;
+  resize: none;
+  margin: 0 20px; }
+
+.inputs {
+  display: flex; }
+  @media (max-width: 800px) {
+    .inputs {
+      flex-direction: column; }
+      .inputs .input-text {
+        margin: 20px 0; } }
+
+.result {
+  width: 50%;
+  min-height: 50px;
+  max-height: 500px;
+  border: 2px solid red; }
+
+.key {
+  width: 20%;
+  height: 20px; }
+
+/*# sourceMappingURL=main.css.map */
