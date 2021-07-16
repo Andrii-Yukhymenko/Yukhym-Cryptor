@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>New site</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <form class="enc-form form">
+          <div class="inputs">
+            <input type="text" class="enc-key key" placeholder="Ключ" />
+            <textarea class="enc-input-text input-text"></textarea>
+            <p class="enc-result result"></p>
+          </div>
+          <button class="enc-btn btn" type="submit">Зашифровать</button>
+        </form>
+        <form class="dec-form form">
+          <div class="inputs">
+            <input type="text" class="dec-key key" placeholder="Ключ" />
+            <textarea class="dec-input-text input-text"></textarea>
+            <p class="dec-result result"></p>
+          </div>
+          <button class="dec-btn btn" type="submit">Расшифровать</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/vendor.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"
+      integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
