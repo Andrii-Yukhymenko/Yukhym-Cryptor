@@ -35,4 +35,11 @@ body {
   width: 20%;
   height: 20px; }
 
+.main-title {
+  color: crimson;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px; }
+
 /*# sourceMappingURL=main.css.map */
