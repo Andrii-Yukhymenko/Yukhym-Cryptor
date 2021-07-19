@@ -15,15 +15,9 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }} # User of the server you want to ssh into
           
           script:
-            cd /
-            rm -rf /var/www/html/
-            rm -rf /home/cloned-repo/
-            cd /home
-            mkdir cloned-repo
-            cd cloned-repo/
+            mkdir cloned-repo2
+            cd cloned-repo2/
             git clone https://github.com/Andrii-Yukhymenko/Yukhym-Cryptor.git
-            cd cloned-repo/
-            cp -r app/* /var/www/html
 
 
 #name: Deploy
