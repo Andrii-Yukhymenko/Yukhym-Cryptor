@@ -18,6 +18,8 @@ jobs:
             cd /
             rm -rf /var/www/html/
             rm -rf /home/cloned-repo/
+            cd /var/www
+            mkdir html
             cd /home
             mkdir cloned-repo
             cd cloned-repo
