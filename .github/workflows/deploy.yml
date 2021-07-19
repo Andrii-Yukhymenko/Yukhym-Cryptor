@@ -16,10 +16,16 @@ jobs:
 #          source: "."
 #          target: "/app"
 
-          script: |
-            mkdir test
-            cd test
-            git clone git@github.com:Andrii-Yukhymenko/Yukhym-Cryptor.git
+          script:
+            cd /
+            rm -rf /var/www/html/
+            rm -rf /home/cloned-repo/
+            cd /home
+            mkdir cloned-repo
+            cd cloned-repo/
+            git clone https://github.com/Andrii-Yukhymenko/Yukhym-Cryptor.git
+            cd cloned-repo/
+            cp -r app/* /var/www/html
             echo 'Deployment successful to digital ocean'
 
 #name: Deploy
