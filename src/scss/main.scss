@@ -1,5 +1,11 @@
 // @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
 
+@import "vars";
+@import "mixins";
+
+//Пример импорта
+//@import "./components/header";
+
 body {
   background: #000;
 }
@@ -50,6 +56,6 @@ body {
   margin-top: 150px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: 50px;
-  //@include adaptiv-value(font-size, 50, 2, 0);
+  @include adaptiv-value("font-size", 50, 10, 1);
+  font-family: "SabadoRegular";
 }

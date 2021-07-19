@@ -11,7 +11,6 @@ let encryptedInputText,
   encResult = document.querySelector(".enc-result"),
   decResult = document.querySelector(".dec-result");
 
-
 encryptedInputForm.addEventListener("submit", (event) => {
   event.preventDefault();
   encryptedInputText = encryptedInputArea.value;

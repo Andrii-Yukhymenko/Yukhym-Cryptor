@@ -40,6 +40,10 @@ body {
   margin-top: 150px;
   margin-bottom: 50px;
   text-align: center;
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: "SabadoRegular"; }
+  @media (max-width: 1200px) {
+    .main-title {
+      font-size: calc( 10px + 40 * ((100vw - 320px) / 880)); } }
 
 /*# sourceMappingURL=main.css.map */
