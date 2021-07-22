@@ -12,24 +12,24 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-  <h1 class="main-title">Yukhym Cryptor</h1>
+    <h1 class="main-title">Yukhym Cryptor</h1>
     <div class="main-wrapper">
       <div class="container">
-        <form class="enc-form form">
-          <div class="inputs">
-            <input type="text" class="enc-key key" placeholder="Ключ" />
-            <textarea class="enc-input-text input-text"></textarea>
-            <p class="enc-result result"></p>
+        <form class="form">
+          <div class="form-titles">
+            <p class="area-title">Значение</p>
+            <p class="area-title">Ключ</p>
+            <p class="area-title">Результат</p>
           </div>
-          <button class="enc-btn btn" type="submit">Зашифровать</button>
-        </form>
-        <form class="dec-form form">
-          <div class="inputs">
-            <input type="text" class="dec-key key" placeholder="Ключ" />
-            <textarea class="dec-input-text input-text"></textarea>
-            <p class="dec-result result"></p>
+          <input type="text" class="key" placeholder="Ключ" />
+          <div class="area-wrapper">
+            <textarea class="input-text area"></textarea>
+            <p class="result area"></p>
           </div>
-          <button class="dec-btn btn" type="submit">Расшифровать</button>
+          <div class="btn-wrapper">
+            <button class="enc-btn btn" type="submit">Зашифровать</button>
+            <button class="dec-btn btn" type="submit">Расшифровать</button>
+          </div>
         </form>
       </div>
     </div>

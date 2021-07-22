@@ -7,7 +7,8 @@
 //@import "./components/header";
 
 body {
-  background: #000;
+  background: $main-bg;
+  font-family: "SabadoRegular";
 }
 
 .container {
@@ -17,20 +18,8 @@ body {
 
 .form {
   margin-top: 20px;
-}
-
-.result {
-  background-color: #fff;
-  overflow-wrap: break-word;
-}
-.input-text {
-  width: 30%;
-  resize: none;
-  margin: 0 20px;
-}
-
-.inputs {
   display: flex;
+  flex-direction: column;
   @media (max-width: 800px) {
     flex-direction: column;
     .input-text {
@@ -39,23 +28,79 @@ body {
   }
 }
 
+.form-titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
 .result {
   width: 50%;
   min-height: 50px;
   max-height: 500px;
-  border: 2px solid red;
+  overflow-wrap: break-word;
+}
+
+.area {
+  background: $form;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  resize: none;
+  width: 35%;
+  border-radius: 10px;
+  padding: 10px;
+  &:nth-child(1){
+    margin-right: 100px;
+  }
+}
+
+.area-title {
+  color: $btn;
+  &:nth-last-child(2) {
+    margin: 0 100px;
+  }
+}
+
+.area-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.inputs-wrapper {
 }
 
 .key {
   width: 20%;
   height: 20px;
+  background: $form;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .main-title {
-  color: crimson;
+  color: $btn;
   margin-top: 150px;
   margin-bottom: 50px;
   text-align: center;
   @include adaptiv-value("font-size", 50, 10, 1);
   font-family: "SabadoRegular";
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.btn{
+  padding: 10px;
+  border-radius: 5px;
+  background-color: $btn;
+  &:nth-child(1){
+    margin-right: 100px;
+  }
+  &:nth-child(2){
+    margin-lefr: 20px;
+  }
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: center;
 }
