@@ -17,7 +17,6 @@ body {
 }
 
 .form {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   @media (max-width: 800px) {
@@ -31,6 +30,7 @@ body {
 .form-titles {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -55,8 +55,11 @@ body {
 
 .area-title {
   color: $btn;
-  &:nth-last-child(2) {
-    margin: 0 100px;
+  //&:nth-last-child(2) {
+  //  margin: 0 100px;
+  //}
+  &--center{
+    text-align: center;
   }
 }
 
@@ -74,7 +77,6 @@ body {
   height: 20px;
   background: $form;
   margin: 0 auto;
-  margin-bottom: 30px;
   padding: 10px;
 }
 
