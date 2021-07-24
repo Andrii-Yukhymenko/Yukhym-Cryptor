@@ -17,7 +17,7 @@ inputForm.addEventListener("click", (event) => {
     encrypted = encrypted.toString();
     // console.log(encrypted);
     resultArea.textContent = encrypted;
-  };
+  }
 
   if (event.target.classList.contains("dec-btn")) {
     inputText = inputArea.value;
@@ -28,17 +28,11 @@ inputForm.addEventListener("click", (event) => {
     decrypted = decrypted.toString(CryptoJS.enc.Utf8);
     // console.log(decrypted);
     resultArea.textContent = decrypted;
-  };
+  }
 });
 
-// decryptedInputForm.addEventListener("submit", (event) => {
-//   event.preventDefault();
-//   decryptedInputText = decryptedInputArea.value;
-//   decKey = document.querySelector(".dec-key").value;
-//   // console.log(decKey);
-//   // console.log(decryptedInputText);
-//   decrypted = CryptoJS.AES.decrypt(decryptedInputText, decKey);
-//   decrypted = decrypted.toString(CryptoJS.enc.Utf8);
-//   // console.log(decrypted);
-//   decResult.textContent = decrypted;
-// });
+let copyBtn = document.querySelector(".copy");
+copyBtn.addEventListener("click", () => {
+  resultArea.select();
+  document.execCommand("copy");
+});

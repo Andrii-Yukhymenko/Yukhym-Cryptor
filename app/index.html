@@ -15,16 +15,21 @@
     <h1 class="main-title">Yukhym Cryptor</h1>
     <div class="main-wrapper">
       <div class="container">
-        <p class="area-title area-title--center">Ключ</p>
         <form class="form">
-          <div class="form-titles">
-            <p class="area-title">Значение</p>
+          <div class="key-wrapper">
             <input type="text" class="key" placeholder="Ключ" />
-            <p class="area-title">Результат</p>
+            <p class="area-title area-title-key area-title--center">Ключ</p>
           </div>
           <div class="area-wrapper">
-            <textarea class="input-text area"></textarea>
-            <p class="result area"></p>
+            <div class="input-text-wrapper">
+              <textarea class="input-text area"></textarea>
+              <p class="area-title area-title--input-text">Значение</p>
+            </div>
+            <div class="result-wrapper">
+              <p class="result area"></p>
+              <p class="area-title">Результат</p>
+              <button class="copy">Скопировать в буффер</button>
+            </div>
           </div>
           <div class="btn-wrapper">
             <button class="enc-btn btn" type="submit">Зашифровать</button>

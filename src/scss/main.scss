@@ -17,8 +17,6 @@ body {
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
   @media (max-width: 800px) {
     flex-direction: column;
     .input-text {
@@ -31,78 +29,108 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
-
+.result-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 40%;
+}
 .result {
-  width: 50%;
   min-height: 50px;
   max-height: 500px;
   overflow-wrap: break-word;
+}
+
+.copy{
+  position: absolute;
+  bottom: 0;
+  right: -15px;
+  transform: translate(+100%, 0);
+  max-width: 70px;
+  background-color: $btn;
+  border-radius: 5px;
+  word-wrap: anywhere;
 }
 
 .area {
   background: $form;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   resize: none;
-  width: 35%;
   border-radius: 10px;
   padding: 10px;
-  &:nth-child(1){
-    margin-right: 100px;
-  }
+  width: 100%;
 }
 
 .area-title {
   color: $btn;
-  //&:nth-last-child(2) {
-  //  margin: 0 100px;
-  //}
-  &--center{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  &--center {
     text-align: center;
+  }
+  &--input-text {
+    left: 100%;
+    transform: translate(-100%, 0);
   }
 }
 
-.area-wrapper{
+.area-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 30px;
 }
 
-.inputs-wrapper {
+.input-text-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 40%;
 }
-
+.key-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 60px 0;
+}
 .key {
   width: 20%;
-  height: 20px;
+  height: 25px;
   background: $form;
-  margin: 0 auto;
   padding: 10px;
+}
+
+.area-title-key {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .main-title {
   color: $btn;
-  margin-top: 150px;
+  margin-top: 50px;
   margin-bottom: 50px;
   text-align: center;
-  @include adaptiv-value("font-size", 50, 10, 1);
+  @include adaptiv-value("font-size", 50, 30, 1);
   font-family: "SabadoRegular";
   text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
-.btn{
+.btn {
   padding: 10px;
   border-radius: 5px;
   background-color: $btn;
-  &:nth-child(1){
+  &:nth-child(1) {
     margin-right: 100px;
   }
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-lefr: 20px;
   }
 }
 
-.btn-wrapper{
+.btn-wrapper {
   display: flex;
   justify-content: center;
 }
