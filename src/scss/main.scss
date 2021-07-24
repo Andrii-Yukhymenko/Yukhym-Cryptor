@@ -22,17 +22,26 @@ body {
     justify-content: center;
     position: relative;
     width: 40%;
+    @media (max-width: 425px) {
+      width: 100%;
+    }
   }
   &__areas {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
+    @media (max-width: 425px) {
+      flex-direction: column;
+    }
   }
-  &__input-text {
+  &__input-text-wrapper {
     display: flex;
     justify-content: center;
     position: relative;
     width: 40%;
+    @media (max-width: 425px) {
+      width: 100%;
+    }
   }
   &__key-wrapper {
     position: relative;
@@ -45,11 +54,12 @@ body {
     justify-content: center;
   }
 }
-
-.result__area {
-  min-height: 50px;
-  max-height: 500px;
-  overflow-wrap: break-word;
+.result {
+  &__area {
+    min-height: 50px;
+    max-height: 500px;
+    overflow-wrap: break-word;
+  }
 }
 
 .copy {
@@ -61,6 +71,15 @@ body {
   background-color: $btn;
   border-radius: 5px;
   word-wrap: anywhere;
+  @media (max-width: 1390px) {
+    bottom: 0;
+    right: 0;
+    transform: translate(0%, 130%);
+  }
+  @media (max-width: 425px) {
+    right: 50%;
+    transform: translate(+50%, +194%);
+  }
 }
 
 .area {
@@ -77,15 +96,31 @@ body {
   position: absolute;
   top: -30px;
   left: 0;
+  @include adaptiv-value("font-size", 20, 20, 1);
+  @media (max-width: 425px) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
-
-.input-text__title {
-  left: 100%;
-  transform: translate(-100%, 0);
+.input-text {
+  @media (max-width: 425px) {
+    margin: 0 0 60px 0;
+  }
+  &__title {
+    left: 100%;
+    transform: translate(-100%, 0);
+    @media (max-width: 425px) {
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
 }
 .key {
   &__input {
     width: 20%;
+    @media (max-width: 425px) {
+      width: 55%;
+    }
     height: 25px;
     background: $form;
     padding: 10px;
