@@ -1,18 +1,18 @@
 "use strict";
 
 var inputText,
-    inputArea = document.querySelector(".input-text"),
+    inputArea = document.querySelector(".input-text__input"),
     inputForm = document.querySelector(".form"),
     key = "",
     encrypted,
     decrypted,
-    resultArea = document.querySelector(".result");
+    resultArea = document.querySelector(".result__area");
 inputForm.addEventListener("click", function (event) {
   event.preventDefault();
 
   if (event.target.classList.contains("enc-btn")) {
     inputText = inputArea.value;
-    key = document.querySelector(".key").value; // console.log(encKey);
+    key = document.querySelector(".key__input").value; // console.log(encKey);
     // console.log(encryptedInputText);
 
     encrypted = CryptoJS.AES.encrypt(inputText, key);
@@ -23,7 +23,7 @@ inputForm.addEventListener("click", function (event) {
 
   if (event.target.classList.contains("dec-btn")) {
     inputText = inputArea.value;
-    key = document.querySelector(".key").value; // console.log(decKey);
+    key = document.querySelector(".key__input").value; // console.log(decKey);
     // console.log(decryptedInputText);
 
     decrypted = CryptoJS.AES.decrypt(inputText, key);

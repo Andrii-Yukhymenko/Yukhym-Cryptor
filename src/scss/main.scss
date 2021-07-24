@@ -17,32 +17,42 @@ body {
 }
 
 .form {
-  @media (max-width: 800px) {
-    flex-direction: column;
-    .input-text {
-      margin: 20px 0;
-    }
+  &__result-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+  }
+  &__areas {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+  }
+  &__input-text {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+  }
+  &__key-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 60px 0;
+  }
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
 
-.form-titles {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.result-wrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 40%;
-}
-.result {
+.result__area {
   min-height: 50px;
   max-height: 500px;
   overflow-wrap: break-word;
 }
 
-.copy{
+.copy {
   position: absolute;
   bottom: 0;
   right: -15px;
@@ -62,50 +72,30 @@ body {
   width: 100%;
 }
 
-.area-title {
+.title {
   color: $btn;
   position: absolute;
   top: -30px;
   left: 0;
-  &--center {
-    text-align: center;
-  }
-  &--input-text {
-    left: 100%;
-    transform: translate(-100%, 0);
-  }
 }
 
-.area-wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 30px;
-}
-
-.input-text-wrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  width: 40%;
-}
-.key-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 0 0 60px 0;
+.input-text__title {
+  left: 100%;
+  transform: translate(-100%, 0);
 }
 .key {
-  width: 20%;
-  height: 25px;
-  background: $form;
-  padding: 10px;
-}
-
-.area-title-key {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  &__input {
+    width: 20%;
+    height: 25px;
+    background: $form;
+    padding: 10px;
+  }
+  &__title {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }
 
 .main-title {
@@ -122,15 +112,11 @@ body {
   padding: 10px;
   border-radius: 5px;
   background-color: $btn;
+  // todo перерадотать растояние
   &:nth-child(1) {
     margin-right: 100px;
   }
   &:nth-child(2) {
     margin-lefr: 20px;
   }
-}
-
-.btn-wrapper {
-  display: flex;
-  justify-content: center;
 }

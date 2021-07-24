@@ -12,26 +12,26 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <h1 class="main-title">Yukhym Cryptor</h1>
     <div class="main-wrapper">
       <div class="container">
+        <h1 class="main-title">Yukhym Cryptor</h1>
         <form class="form">
-          <div class="key-wrapper">
-            <input type="text" class="key" placeholder="Ключ" />
-            <p class="area-title area-title-key area-title--center">Ключ</p>
+          <div class="form__key-wrapper key">
+            <input type="text" class="key__input" placeholder="Ключ" />
+            <p class="title key__title">Ключ</p>
           </div>
-          <div class="area-wrapper">
-            <div class="input-text-wrapper">
-              <textarea class="input-text area"></textarea>
-              <p class="area-title area-title--input-text">Значение</p>
+          <div class="form__areas">
+            <div class="form__input-text input-text">
+              <textarea class="input-text__input area"></textarea>
+              <p class="title input-text__title">Значение</p>
             </div>
-            <div class="result-wrapper">
-              <p class="result area"></p>
-              <p class="area-title">Результат</p>
+            <div class="form__result-wrapper result__area">
+              <p class="result__area area"></p>
+              <p class="title result__title">Результат</p>
               <button class="copy">Скопировать в буффер</button>
             </div>
           </div>
-          <div class="btn-wrapper">
+          <div class="form__btn-wrapper">
             <button class="enc-btn btn" type="submit">Зашифровать</button>
             <button class="dec-btn btn" type="submit">Расшифровать</button>
           </div>
