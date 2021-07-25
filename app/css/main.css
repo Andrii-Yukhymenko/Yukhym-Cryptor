@@ -4,6 +4,7 @@ body {
 
 .container {
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto; }
 
 .form__result-wrapper {
@@ -43,8 +44,6 @@ body {
   justify-content: center; }
 
 .result__area {
-  min-height: 50px;
-  max-height: 500px;
   overflow-wrap: break-word; }
 
 .copy {
@@ -71,7 +70,8 @@ body {
   border-radius: 7px;
   padding: 10px;
   width: 100%;
-  font-size: 20px; }
+  font-size: 20px;
+  min-height: 130px; }
 
 .title {
   color: #ca3e47;
@@ -102,6 +102,7 @@ body {
 .key__input {
   width: 20%;
   border-radius: 7px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   height: 25px;
   background: #727272;
   padding: 10px; }
