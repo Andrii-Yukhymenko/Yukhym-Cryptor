@@ -52,10 +52,8 @@ body {
   bottom: 0;
   right: -15px;
   transform: translate(100%, 0);
-  max-width: 70px;
   background-color: #ca3e47;
-  border-radius: 5px;
-  word-wrap: anywhere; }
+  border-radius: 5px; }
   @media (max-width: 1390px) {
     .copy {
       bottom: 0;
@@ -64,25 +62,26 @@ body {
   @media (max-width: 425px) {
     .copy {
       right: 50%;
-      transform: translate(50%, 194%); } }
+      transform: translate(50%, 200%); } }
 
 .area {
   background: #727272;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   resize: none;
-  border-radius: 10px;
+  border-radius: 7px;
   padding: 10px;
-  width: 100%; }
+  width: 100%;
+  font-size: 20px; }
 
 .title {
   color: #ca3e47;
   position: absolute;
-  top: -30px;
   left: 0;
-  font-size: 20px; }
+  font-size: 20px;
+  top: -35px; }
   @media (max-width: 1200px) {
     .title {
-      font-size: calc(20px + 0 * ((100vw - 320px) / 880)); } }
+      top: calc(-30px + -5 * ((100vw - 320px) / 880)); } }
   @media (max-width: 425px) {
     .title {
       left: 50%;
@@ -102,6 +101,7 @@ body {
 
 .key__input {
   width: 20%;
+  border-radius: 7px;
   height: 25px;
   background: #727272;
   padding: 10px; }
@@ -111,7 +111,6 @@ body {
 
 .key__title {
   position: absolute;
-  top: -30px;
   left: 50%;
   transform: translate(-50%, 0); }
 
@@ -122,18 +121,24 @@ body {
   text-align: center;
   font-size: 50px;
   font-family: "SabadoRegular";
-  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8); }
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  margin-top: 50px; }
   @media (max-width: 1200px) {
     .main-title {
       font-size: calc(30px + 20 * ((100vw - 320px) / 880)); } }
+  @media (max-width: 1200px) {
+    .main-title {
+      margin-top: calc(25px + 25 * ((100vw - 320px) / 880)); } }
 
 .btn {
+  font-size: 10px;
   padding: 10px;
   border-radius: 5px;
   background-color: #ca3e47; }
   .btn:nth-child(1) {
-    margin-right: 100px; }
-  .btn:nth-child(2) {
-    margin-lefr: 20px; }
+    margin-right: 120px; }
+    @media (max-width: 1200px) {
+      .btn:nth-child(1) {
+        margin-right: calc(65px + 55 * ((100vw - 320px) / 880)); } }
 
 /*# sourceMappingURL=main.css.map */

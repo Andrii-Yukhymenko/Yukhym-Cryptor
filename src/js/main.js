@@ -20,12 +20,19 @@ inputForm.addEventListener("click", (event) => {
     key = document.querySelector(".key__input").value;
     decrypted = CryptoJS.AES.decrypt(inputText, key);
     decrypted = decrypted.toString(CryptoJS.enc.Utf8);
-    resultArea.textContent = decrypted;
+    if (decrypted === undefined || decrypted === '') {
+      alert("ERROR: code or key is incorrect");
+    } else {
+      resultArea.textContent = decrypted;
+    }
   }
 });
 
 let copyBtn = document.querySelector(".copy");
 copyBtn.addEventListener("click", () => {
-  resultArea.select();
-  document.execCommand("copy");
+  if (encrypted === undefined) {
+    navigator.clipboard.writeText("");
+  } else {
+    navigator.clipboard.writeText(encrypted);
+  }
 });
