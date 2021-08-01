@@ -16,13 +16,13 @@ jobs:
 
           script: |
             cd /
-            rm -rf /var/www/html/
-            rm -rf /home/cloned-repo/
+            rm -rf /var/www/cryptor/
+            rm -rf /home/cloned-repo-cryptor/
             cd /var/www
-            mkdir html
+            mkdir cryptor
             cd /home
-            mkdir cloned-repo
-            cd cloned-repo
+            mkdir cloned-repo-cryptor
+            cd cloned-repo-cryptor
             git clone https://github.com/Andrii-Yukhymenko/Yukhym-Cryptor.git
             cd Yukhym-Cryptor/
-            cp -r app/* /var/www/html
+            cp -r app/* /var/www/cryptor
